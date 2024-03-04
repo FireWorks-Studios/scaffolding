@@ -35,7 +35,8 @@ const makeScaffolding = ({full}) => ({
   devtool: isProduction ? '' : 'source-map',
   output: {
     filename: 'scaffolding/[name].js',
-    path: dist
+    path: dist,
+    library: "scaffolding",
   },
   entry: full ? {
     'scaffolding-full': './src/scaffolding/export.js',
@@ -118,7 +119,7 @@ const makeScaffolding = ({full}) => ({
   plugins: [
     ...(buildId ? [new AddBuildIDToOutputPlugin(buildId)] : []),
     ...(process.env.BUNDLE_ANALYZER === (full ? 'scaffolding-full' : 'scaffolding-min') ? [new BundleAnalyzerPlugin()] : [])
-  ]
+  ],
 });
 
 const commonFrontendPlugins = () => [
