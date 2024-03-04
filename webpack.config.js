@@ -36,7 +36,6 @@ const makeScaffolding = ({full}) => ({
   output: {
     filename: 'scaffolding/[name].js',
     path: dist,
-    library: "scaffolding",
   },
   entry: full ? {
     'scaffolding-full': './src/scaffolding/export.js',
