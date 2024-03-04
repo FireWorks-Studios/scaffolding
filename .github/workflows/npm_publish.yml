@@ -12,10 +12,17 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "20"
+      - name: get rid of 'v' from v*
+        run: |
+          ORIGINAL_VERSION=${{ github.ref_name }}
+          VERSION_WITHOUT_V="${ORIGINAL_VERSION#v}"
+          echo "VERSION_WITHOUT_V=$VERSION_WITHOUT_V" >> $GITHUB_ENV
+      - name: confirm version
+        run: echo $VERSION_WITHOUT_V
       - run: npm ci
       - run: npm run build-prod
       - uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.NPM_PUBLISH_KEY }}
           access: public
-          tag:  ${{ github.ref_name }}
+          tag: $VERSION_WITHOUT_V
