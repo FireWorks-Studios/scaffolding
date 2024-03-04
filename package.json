@@ -1,7 +1,7 @@
 {
   "name": "@fireworks-studios/scaffolding",
   "version": "0.1.1",
-  "description": "Converts Scratch projects into HTML files, zip archives, or executable programs for Windows, macOS, and Linux.",
+  "description": "Scratch project player, forked from TurboWarp/packager",
   "main": "dist/scaffolding/scaffolding-full.js",
   "scripts": {
     "start": "webpack serve",
