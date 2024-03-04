@@ -4,4 +4,13 @@ This is a synced fork of [TurboWarp/packager](https://github.com/TurboWarp/packa
 
 Therefore this fork publishes a npm library called `@fireworks-studios/scaffolding` as the upstream repository commits updates.
 
-A few more modifications have been made to this fork; such as not exposing Scaffolding as `window.Scaffolding` anymore, but just exporting it as a part of the library.
+## How to use
+
+```ts
+// Attaches Scaffolding to window
+import "@fireworks-studios/scaffolding"
+
+// Later
+const scaffolding = new window.Scaffolding.Scaffolding();
+console.log(scaffolding);
+```
