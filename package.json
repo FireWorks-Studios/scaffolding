@@ -1,6 +1,6 @@
 {
   "name": "@fireworks-studios/scaffolding",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Scratch project player, forked from TurboWarp/packager",
   "main": "dist/scaffolding/scaffolding-full.js",
   "scripts": {
