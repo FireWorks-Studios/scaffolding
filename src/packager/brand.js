@@ -34,17 +34,9 @@ module.exports = {
   WEBSITE: 'https://packager.turbowarp.org/',
   COPYRIGHT_NOTICE: `Copyright (C) 2021-2024 Thomas Weber
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU Lesser General Public License version 3
-as published by the Free Software Foundation.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-See <https://www.gnu.org/licenses/> for a copy of the GNU Lesser
-General Public license.`,
+The Source Code Form of this program is available under the terms of the
+Mozilla Public License, v. 2.0. You can obtain a copy of the license at
+https://www.mozilla.org/en-US/MPL/2.0/.`,
   ACCENT_COLOR: '#ff4c4c',
   SOURCE_CODE: 'https://github.com/TurboWarp/packager',
   FEEDBACK_PRIMARY: {
